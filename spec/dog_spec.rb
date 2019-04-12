@@ -25,7 +25,6 @@ describe "Dog" do
   end
 
   describe ".all" do
-      binding.pry
     it "is a class method that puts out the name of each dog to the terminal" do
       expect{Dog.all}.to output("Pluto\nFido\nMaddy\n").to_stdout
     end
