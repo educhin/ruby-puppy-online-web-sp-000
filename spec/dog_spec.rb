@@ -1,4 +1,5 @@
 require "spec_helper"
+require "pry"
 
 describe "Dog" do
 
@@ -40,6 +41,7 @@ describe "Dog" do
 
   describe "#name" do
     it "has a name" do
+      binding.pry
       expect(pluto.name).to eq("Pluto")
     end
   end
